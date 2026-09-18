@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>seoguarantee.com: status and next steps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --violet-800:#27043d;--violet-500:#4b0670;--violet-100:#efe7f4;--gold-200:#ffc906;--gold-500:#e59c02;
+  --paper:#f7f6fa;--surface:#fff;--ink:#1c1622;--ink-soft:#5a5163;--rule:#ddd6e3;--link:#4b0670;
+  --ok:#1b6b3a;--wait:#8a6100;--stop:#8f1d2e;
+  --font-display:"Montserrat","Century Gothic",system-ui,sans-serif;--font-body:"Literata",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#140d1c;--surface:#1e1528;--ink:#eee8f3;--ink-soft:#b3a8bf;--rule:#3a2d47;--link:#e6c9ff;
+  --violet-100:#2a1d38;--ok:#6ddc9b;--wait:#f0c257;--stop:#ff9aa8;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:1.05rem;line-height:1.65}
+a{color:var(--link)}
+.masthead{background:var(--violet-800);color:#fff;padding:2.5rem 1.5rem 2rem}
+.wrap{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+.masthead .wrap{padding:0 1.5rem}
+.masthead h1{font-family:var(--font-display);font-weight:800;font-size:clamp(1.7rem,3.6vw,2.4rem);margin:0 0 .4rem;letter-spacing:-.01em}
+.masthead p{margin:0;color:#d9c8e6;font-size:.98rem}
+main{max-width:1000px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+h2{font-family:var(--font-display);font-weight:700;font-size:1.35rem;margin:2.75rem 0 .5rem}
+h2:first-child{margin-top:0}
+h3{font-family:var(--font-display);font-weight:600;font-size:1.05rem;margin:1.75rem 0 .5rem}
+p,li{max-width:74ch}
+.lede{font-size:1.12rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.75rem;margin:1.5rem 0 0}
+.kpi{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:1rem 1.1rem}
+.kpi b{display:block;font-family:var(--font-display);font-size:1.6rem;line-height:1.1}
+.kpi span{color:var(--ink-soft);font-size:.86rem}
+.kpi.good{border-top:5px solid var(--ok)}.kpi.wait{border-top:5px solid var(--gold-500)}.kpi.stop{border-top:5px solid var(--violet-500)}
+.table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:12px;background:var(--surface);margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:.75rem .95rem;border-bottom:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--font-display);font-weight:600;font-size:.86rem;background:var(--violet-100)}
+td:first-child{font-weight:600}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:var(--violet-100);padding:.08em .35em;border-radius:4px}
+.tag{font-family:var(--font-display);font-weight:600;font-size:.72rem;padding:.1rem .5rem;border-radius:999px;white-space:nowrap}
+.t-ok{background:var(--ok);color:#fff}.t-wait{background:var(--gold-200);color:var(--violet-800)}.t-stop{background:var(--violet-500);color:#fff}
+.note{color:var(--ink-soft);font-size:.94rem}
+.callout{background:var(--surface);border:1px solid var(--rule);border-left:5px solid var(--gold-500);border-radius:12px;padding:1.1rem 1.3rem;margin:1.25rem 0}
+.callout h3{margin-top:0}
+ol.plain,ul.plain{padding-left:1.2rem}
+ol.plain li,ul.plain li{margin:0 0 .6rem}
+.phase{border:1px solid var(--rule);border-radius:12px;background:var(--surface);padding:1.1rem 1.3rem;margin:0 0 .85rem}
+.phase h3{margin:0 0 .35rem}
+.phase .meta{font-family:var(--font-display);font-size:.8rem;color:var(--ink-soft);margin-bottom:.5rem}
+footer{max-width:1000px;margin:0 auto;padding:0 1.5rem 3rem;color:var(--ink-soft);font-size:.88rem}
+</style>
+</head>
+<body>
+<header class="masthead"><div class="wrap">
+  <h1>seoguarantee.com: status and next steps</h1>
+  <p>Progress review, 18 September 2026, end of day. Local build, nothing indexed. Updated after the copy pass.</p>
+</div></header>
+<main>
+<p class="lede">The machine works. 123 pages are written, every one of them reachable and measured,
+8 are held back because there is too little to say on them, and nothing is indexed. What remains is not a
+building problem: it is the cost of gathering evidence for 257 pages. The largest single piece of
+that, and tomorrow's priority, is the 32 states that currently have nothing to say.</p>
+
+<div class="kpis">
+  <div class="kpi good"><b>123</b><span>pages written of 257 planned</span></div>
+  <div class="kpi wait"><b>8</b><span>built but held back: too little to say</span></div>
+  <div class="kpi stop"><b>4</b><span>brand answers blocking publication</span></div>
+  <div class="kpi good"><b>258/258</b><span>noindex, sitemap empty</span></div>
+</div>
+
+<h2>Where the site stands</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Page type</th><th>Planned</th><th>Written</th><th>Old site, not yet rebuilt</th><th>Refused</th></tr></thead>
+  <tbody>
+    <tr><td>Core pages, hubs, services</td><td>13</td><td>13</td><td>0</td><td>0</td></tr>
+    <tr><td>Industry</td><td>54</td><td>54</td><td>0</td><td>0</td></tr>
+    <tr><td>State</td><td>50</td><td>50</td><td>0</td><td>0</td></tr>
+    <tr><td>Industry in a city</td><td>54</td><td>3</td><td>0</td><td>51</td></tr>
+    <tr><td>City</td><td>25</td><td>1</td><td>24</td><td>0</td></tr>
+    <tr><td>Articles and guides</td><td>61</td><td>2</td><td>0</td><td>59</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>257</strong></td><td><strong>123</strong></td><td><strong>24</strong></td><td><strong>110</strong></td></tr>
+  </tbody>
+</table></div>
+<p class="note">Every industry and state page now exists. 8 of the 54 industry pages have so little
+to say that they are deliberately left out of the menus and the footer, reachable only by typing the
+address. They return the moment their research lands.</p>
+
+<h2>What the bulk test proved</h2>
+<p>Every industry and state page was generated through the same copy layer as the pilot, rendering
+only the modules whose data exists. It produced 960 dropped modules, each logged with the item it
+waits on, and it refused to write 82 pages rather than pad them.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Measure</th><th>Before</th><th>After</th><th>Reading</th></tr></thead>
+  <tbody>
+    <tr><td>Industry pairs too similar</td><td>1341 of 1485</td><td>1 of 1035 linked</td><td>Fixed by content, not by measurement. The one remaining pair shares a federal industry code</td></tr>
+    <tr><td>State pairs too similar</td><td>1178 of 1225</td><td>0 of 1225</td><td>Same</td></tr>
+    <tr><td>Pages below the substance floor</td><td>0</td><td>2 of 46 linked</td><td>The old test could not fail; on identical text the new one found 63</td></tr>
+    <tr><td>Distinct industry openings</td><td>1 real shape</td><td>Selected per page from its own data</td><td>No page falls back to a shared sentence</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout">
+  <h3>The two findings worth the exercise</h3>
+  <p><strong>A quality check that could not fail.</strong> The substance test compared marked text
+  against unmarked text, so copy repeated on 54 pages counted as unique. Rerun on identical bytes
+  after the fix, 63 pages fell below the floor. Every page has been remeasured since.</p>
+  <p><strong>A template writing the same sentence 50 times.</strong> A 38-word conclusion was
+  hardcoded into the state page template, so every state said the same thing about its own data.
+  Replaced with sentences built from each state's figures: 136 failing pairs became 7, then 0.</p>
+  <p class="note">Neither was visible on three pilot pages. Both were obvious across 104.</p>
+</div>
+
+<h2>Why 8 pages are held back, and why many more are thin</h2>
+<p>Every page now exists, and exposure is controlled by linking rather than by refusing to write.
+8 industry pages have nothing but a figure and a set of answers, so they are left out of every menu
+and the footer until their research lands. Many more are built and linked but thinner than they
+should be, for the same reason: nobody has yet looked at what page one holds for that trade, or what
+that state requires on a website.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Count</th><th>What is missing</th><th>Who can supply it</th></tr></thead>
+  <tbody>
+    <tr><td>51</td><td>Industry pages with no search snapshot: nobody has looked at what page one holds for that trade</td><td>Us, roughly 10 minutes per query</td></tr>
+    <tr><td>49</td><td>State pages with no licensing or advertising rules sourced</td><td>Us, from official state boards</td></tr>
+    <tr><td>25</td><td>Regulated industries with no rules source</td><td>Us, same</td></tr>
+    <tr><td>8</td><td>Industries with no usable official business count, because the federal code does not name the trade</td><td>Nobody. These pages carry other evidence or wait</td></tr>
+    <tr><td>Every page</td><td>Client results: no page shows a single figure</td><td>The brand. See below</td></tr>
+  </tbody>
+</table></div>
+
+<h2>What the brand still owes, and what it unblocks</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Item</th><th>Blocks</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>Verified client results: figures, dates, how measured, permission</td><td>Every proof section on every page. Today the site shows no results at all</td><td><span class="tag t-stop">Open</span></td></tr>
+    <tr><td>What the audit delivers, how long it takes</td><td>The audit page, which is the site's main call to action</td><td><span class="tag t-stop">Open</span></td></tr>
+    <tr><td>What happens if the guarantee is missed</td><td>A visible placeholder sits on the guarantee page rather than an invented answer</td><td><span class="tag t-wait">Placeholder in place</span></td></tr>
+    <tr><td>Team biographies</td><td>The team page</td><td><span class="tag t-wait">Names and roles only</span></td></tr>
+    <tr><td>Business Profile address and review count</td><td>The profile lists a different address from the site and shows no reviews</td><td><span class="tag t-wait">Site address confirmed</span></td></tr>
+  </tbody>
+</table></div>
+<p class="note">Of these, verified client results is the one that changes how the site reads. Every
+competitor page we studied leads with proof; ours cannot, and says so rather than inventing it.</p>
+
+<h2>Claims restored on the old site's authority</h2>
+<p>Four claims that were published on the live site were removed during the cleanup and have now
+been restored, on the basis that what the site said about itself is the brand's own record.
+They are not sourced and cannot be evidenced from anything we hold, so they are listed here with
+the risk on each, for a decision made in full view rather than by default.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Restored claim</th><th>Why it is unsupported</th><th>Risk</th></tr></thead>
+  <tbody>
+    <tr><td>"The Best Las Vegas SEO Company", as a title suffix on most pages</td><td>A superlative with nothing behind it, and inaccurate on pages about other states</td><td>Low legally, some credibility cost with an informed buyer</td></tr>
+    <tr><td>Guaranteed top results for a named search such as "dentist near me"</td><td>Promises one specific search outcome, which the guarantee itself does not promise</td><td>The highest of the four: more specific than the guarantee, and easy to disprove</td></tr>
+    <tr><td>Pushing for the number one spot</td><td>The site's own pages argue that a number one guarantee is a red flag, and Google's documentation says the same</td><td>Contradicts the strongest trust argument on the site, on the same site</td></tr>
+    <tr><td>Link wheels, search engine and directory submissions, listed as deliverables</td><td>Dated tactics; some describe link schemes under Google's spam policies</td><td>Reputational with an informed buyer rather than a penalty in itself</td></tr>
+  </tbody>
+</table></div>
+
+<h3>Two claims stay out</h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>Claim</th><th>Why it cannot be restored</th></tr></thead>
+  <tbody>
+    <tr><td>"100% success rate" with every industry, and "average campaign yields 30% to 100% increase in sales"</td><td>Cannot be true alongside a guarantee that covers up to half the key phrases depending on competition. The site would be making two incompatible promises.</td></tr>
+    <tr><td>The 46.4, 87.4 and 800 percent figures</td><td>The same three numbers appear on three unrelated clients, so at most one set can be right. Restoring them publishes figures we know to be wrong on at least two pages. They return per client as soon as the real figures are confirmed.</td></tr>
+  </tbody>
+</table></div>
+
+<h2>What is protecting the site</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Control</th><th>What it stops</th><th>Caught so far</th></tr></thead>
+  <tbody>
+    <tr><td>Nothing is indexed</td><td>Anything unfinished reaching search</td><td>258 of 258 pages, empty sitemap, no page released</td></tr>
+    <tr><td>Claims that cannot be true are blocked</td><td>Incompatible promises and figures known to be wrong reaching a page</td><td>Two claims held out; four restored on instruction and flagged above</td></tr>
+    <tr><td>Facts come from one declared source</td><td>Pages drifting from the agreed wording</td><td>33 pages carry the guarantee, all identical to the character</td></tr>
+    <tr><td>Near-duplicate detection</td><td>Bulk pages that are one page with the name swapped</td><td>Two structural defects found and fixed this run</td></tr>
+    <tr><td>Nothing unsourced is published</td><td>Invented numbers and claims</td><td>960 modules dropped rather than filled</td></tr>
+  </tbody>
+</table></div>
+<h2>Next steps, and what each needs</h2>
+<p>Ordered so that nothing waits on anything below it. The first is under way as this is written.
+Effort is ours unless stated.</p>
+
+<div class="phase">
+  <h3>1. Finish the navigation <span class="tag t-ok">Done today</span></h3>
+  <div class="meta">Completed · no new research</div>
+  <p>The hubs, menus and footer now list what has been written rather than what the old site had.
+  The industries hub lists 46, the locations hub all 50 states with their cities beneath them, and
+  the footer carries every published page. No page is orphaned, none is more than two clicks from
+  the home page, and every page has at least one link from a related page rather than only from the
+  menus.</p>
+</div>
+
+<div class="phase">
+  <h3>2. Improve the copy <span class="tag t-ok">Done for eight pages</span></h3>
+  <div class="meta">No new research · no dependency</div>
+  <p>Eight pages and three articles are written out in full and handed to the build as finished
+  copy. What remains is the same treatment for the bulk pages, which is a different job: those
+  are written from data, so their quality rises as the research lands rather than by rewriting.</p>
+</div>
+
+<div class="phase">
+  <h3>3. Brand answers</h3>
+  <div class="meta">Blocked on the brand · unblocks proof on every page</div>
+  <p>Verified client results, what the audit delivers, team biographies, and the Business Profile
+  address. The first is the one that matters: it is the difference between a site that says results
+  are being verified and a site that shows them.</p>
+</div>
+
+<div class="phase">
+  <h3>4. Research wave: the first eight industries</h3>
+  <div class="meta">8 industry pages plus their guides</div>
+  <p>Two searches captured per industry, a licensing or advertising source per regulated trade,
+  and the business figures we already hold. Order by evidence: industries with a client first,
+  then by demand once keyword data is available. Each wave is measured before the next starts.</p>
+</div>
+
+<div class="phase">
+  <h3>5. All 50 states, in batches of ten <span class="tag t-wait">Tomorrow's priority</span></h3>
+  <div class="meta">32 states need a page, 18 need their rules</div>
+  <p>One licensing board per state, the metro file parsed once for all 50, and the trade rankings
+  from figures we already hold. Detailed above, with the state-by-state table in the working
+  document. This is the batch that makes the nationwide claim true, and it fills the biggest gap on
+  the industry pages while it runs.</p>
+</div>
+
+<div class="phase">
+  <h3>6. City pages and the industry-in-city set</h3>
+  <div class="meta">After waves 4 and 5 · 25 cities, then combinations by gate</div>
+  <p>The 25 city pages exist from the old site and share a median 93% of their text with each
+  other, so each needs rebuilding with its own metro figures and a dated search snapshot.
+  Combination pages are built only where the data, the demand and the distinctiveness all hold.</p>
+</div>
+
+<div class="phase">
+  <h3>7. Launch, in waves</h3>
+  <div class="meta">Per wave, once the brand answers are in</div>
+  <p>Publication is per page, not per site. A page's noindex lifts when its checks pass, so the
+  first release is the core pages, Las Vegas and the industries that have their evidence, with
+  every later wave following the same gate.</p>
+</div>
+
+<h2>What reviewing the build exposed</h2>
+<p>The site was read page by page this afternoon, which found four problems that no
+automated check would have caught, because each one is a judgment about reading rather
+than a rule about data. All four are fixed in the specification and go into the next build.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>What was wrong</th><th>Why it happened</th><th>The fix</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>The guarantee was stated in full on 33 pages</strong>, the same 90 words each time</td>
+      <td>A rule of ours: one agreed wording, copied exactly everywhere, so the terms could not drift from page to page. It prevented drift and produced repetition instead</td>
+      <td>The agreed thing is now the terms, not the sentence. Each page states them in its own words: the home page as a promise, the process section as a process, the answers section as an answer. A new check confirms the terms are stated accurately and that no sentence about the guarantee is copied across pages</td>
+    </tr>
+    <tr>
+      <td><strong>The footer carried 137 links</strong>, including a wall of 46 industries and 75 places</td>
+      <td>Also our rule: every published page in the footer, so nothing would be hard to reach</td>
+      <td>About twelve links: the four section pages, the guarantee, the terms, the audit, the included services, and the contact block. Finding pages is the section pages' job, and they are one click from anywhere</td>
+    </tr>
+    <tr>
+      <td><strong>Menus repeated the target phrase on every item</strong>, so "SEO Guarantee" appeared 46 times in one menu</td>
+      <td>The phrase belongs in page titles and headings, and it leaked into the navigation labels as well</td>
+      <td>Menus, section pages and the footer use plain names: "Air conditioning and HVAC", "Texas", "Las Vegas, NV". Titles and headings keep the phrase</td>
+    </tr>
+    <tr>
+      <td><strong>Dropdown menus duplicated the section pages</strong> beneath them</td>
+      <td>Carried over from the old site's structure</td>
+      <td>Six links, no dropdowns: Home, The Guarantee, Industries, Locations, Results, Contact, with Book your audit as a button. Every page is still within two clicks</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<div class="callout">
+  <h3>The pattern behind all four</h3>
+  <p>Each was a rule written to prevent a real failure: pages contradicting each other,
+  pages being unreachable, the phrase going missing from titles. Each rule did its job and
+  produced something no reader would tolerate. They were caught by reading the site, not by
+  the checks, which is the argument for reviewing pages by hand at every stage rather than
+  trusting the measurements.</p>
+</div>
+
+<h2>What a bulk page is supposed to contain</h2>
+<p>There are four kinds of page produced at volume: one per industry, one per state, one
+per city, and one per industry in a given city. Each is built from a fixed list of
+sections, and each section is filled from a named source. Nothing is written freehand,
+and nothing is written without a source.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Section</th><th>What it says</th><th>Where the content comes from</th><th>Same on every page?</th></tr></thead>
+  <tbody>
+    <tr><td>Opening</td><td>What the page is about, in a line written from that page's own data</td><td>The page's own figures, rules or search captures</td><td>No</td></tr>
+    <tr><td>The guarantee</td><td>One line, with a link</td><td>The declared terms</td><td>Yes, deliberately. It is a fixed commitment and must not vary</td></tr>
+    <tr><td>What page one looks like</td><td>What a customer actually sees when they search: a map of local businesses, paid adverts, directory listings, and how many of each</td><td>A dated search capture, made by hand for that industry in that place</td><td>No. This is the section that makes the page worth reading</td></tr>
+    <tr><td>Who holds page one</td><td>The count of local businesses, national chains and directories in the top ten</td><td>The same capture</td><td>No</td></tr>
+    <tr><td>How many competitors</td><td>Business counts for that industry, nationally or in that state or metro, with the year and the source</td><td>US Census, County Business Patterns</td><td>No, though two industries sharing one federal code share a figure</td></tr>
+    <tr><td>What the state requires</td><td>Licensing and advertising rules that apply to that trade's website</td><td>The state's own licensing board, cited</td><td>No, and this is where states differ most</td></tr>
+    <tr><td>Proof</td><td>A client result from that industry or that place</td><td>Published client results</td><td>No, and it is absent where no client fits</td></tr>
+    <tr><td>Related pages</td><td>Links to the industries and places connected to this one</td><td>The link plan</td><td>Partly</td></tr>
+    <tr><td>Questions</td><td>Two or more, at least one drawn from what people actually search for around that subject</td><td>The captures, or questions from sales calls</td><td>No. Below two questions the section is removed rather than padded</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Are they different enough from each other?</h2>
+<p>Measured, not assumed. Every page is compared against every other page of its kind,
+using the wording rather than the layout, and two tests have to pass before a page is
+allowed to go live.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Test</th><th>What it requires</th><th>Current result</th></tr></thead>
+  <tbody>
+    <tr><td>Difference</td><td>No two pages of the same kind may share more than half their wording</td><td>Industry pages in the menus: 1 pair of 1,035 over the line. States: 0 of 1,225. Combinations: 0 of 3</td></tr>
+    <tr><td>Substance</td><td>At least a third of a page must be wording that appears on no other page at all</td><td>2 of the 46 linked industry pages fall short. States: none</td></tr>
+  </tbody>
+</table></div>
+
+<p>The one industry pair over the line is dermatology and plastic surgery. They are
+recorded as an exception with the reason: the federal statistics use a single code for
+both, so they legitimately share a figure, and neither has its own search capture yet.
+The exception is reviewed the moment either gains one.</p>
+
+<p>The measurement is stricter than it sounds in one respect and looser in another.
+Wording that is required to be identical, the guarantee line and the source note under a
+figure, is excluded before comparing, because a fixed commitment repeated accurately is
+not duplication. Everything else counts, including anything a writer might reach for out
+of habit. That is how the two template faults found in testing were caught.</p>
+
+<div class="callout">
+  <h3>On the standard these are being held to</h3>
+  <p>Search engines object to pages generated at scale that add nothing, and to sets of
+  near-identical pages made to catch every variation of a search. The defence is not
+  length or wording: it is that each page carries information that exists nowhere else on
+  the site, gathered for that page. A dated record of what page one looks like for
+  plumbers in Las Vegas is that. A paragraph rewritten to sound different is not.</p>
+  <p>This is why pages are refused rather than padded, and why the checks measure
+  distinct content rather than word count.</p>
+</div>
+
+<h2>The copy: written, not generated</h2>
+<p>This afternoon's judgement was that the writing was thin, and it was. The pages stated
+facts and stopped, where a reader needs an argument. Eight pages have since been written
+out in full, by hand, against a reference standard, and handed to the build as finished
+copy rather than as instructions to write something.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Page</th><th>What it now does</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Home</strong></td>
+      <td>Hero, the press bar, four proof figures, The Blez in depth, six services each linking to its own page, industries, locations, how the guarantee works, five questions, and the form</td></tr>
+    <tr><td><strong>The Full Suite</strong></td>
+      <td>Opens by naming the alternative: four invoices, four logins, and nobody responsible for the ranking. Then why one contract is what makes a guarantee possible at all</td></tr>
+    <tr><td><strong>SEO services</strong></td>
+      <td>What the work actually involves, and what we deliberately do not do: no bought links, no spun articles, no bulk directory submissions</td></tr>
+    <tr><td><strong>Web design</strong></td>
+      <td>A site can be beautiful and unrankable, and a site nobody can change stops being updated</td></tr>
+    <tr><td><strong>Conversion</strong></td>
+      <td>Ten thousand visitors a month and under one percent doing anything is not a traffic problem</td></tr>
+    <tr><td><strong>Results</strong></td>
+      <td>The four figures as pills, The Blez as the featured case, four more case studies, and the guarantee in a framed box</td></tr>
+    <tr><td><strong>About us</strong></td>
+      <td>The company in its own words, the founder, the nine people who do the work, and where to find them</td></tr>
+    <tr><td><strong>Resources</strong></td>
+      <td>One page: the written answers, then the same answers on video, with a transcript beneath each</td></tr>
+  </tbody>
+</table></div>
+
+<h2>Three articles, one of them our own research</h2>
+<p>The first two answer the question the whole business turns on. The third is something no
+competitor has.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Article</th><th>What it is</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Can an SEO company guarantee first page rankings?</strong></td>
+      <td>Yes within limits that can be written down, no if the promise is a position. What Google's own guidance says, the five things a guarantee has to name in writing, and four questions to ask any agency</td></tr>
+    <tr><td><strong>The red flags checklist</strong></td>
+      <td>Nine warning signs, then the brand scored against its own checklist, including the row where it currently scores badly. An article of this kind is worthless if the company publishing it comes out perfect</td></tr>
+    <tr><td><strong>What page one actually looks like for a local trade</strong></td>
+      <td>Nine searches captured in Las Vegas on one afternoon. All six customer searches returned a map of businesses above the first ordinary result. Directories appeared in every one. "Plumber" returned four adverts, one inside the map; "water heater repair" the same afternoon returned none</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout">
+  <h3>Why the third article matters more than the other two</h3>
+  <p>Nobody else can publish it. It is built from searches we captured by hand, on a stated
+  date, with the method described, and it produces a finding an owner can act on: the phrase
+  everyone in a trade competes for is often the one with the least page left on it.</p>
+  <p>It is also the piece most likely to be linked to by other sites, which is the one thing
+  a new site cannot buy and the slowest to build. Two explainers and one piece of research
+  is the right ratio, and the research should lead the list.</p>
+</div>
+
+<h2>What is honest about the copy</h2>
+<ul class="plain">
+  <li><strong>The client results are the brand's own published figures</strong>, restored
+  after being cut, and used as published.</li>
+  <li><strong>Where we cannot evidence something, the page says so.</strong> The red flags
+  article states plainly that named proof with dates is the row where the company currently
+  scores badly.</li>
+  <li><strong>The remedy is still a visible placeholder</strong> on the guarantee page,
+  marked as pending rather than invented, and nothing generated can print a remedy claim
+  anywhere else.</li>
+  <li><strong>Three citations are flagged for checking</strong> before those pages are
+  allowed to go live: one Google documentation link and two references to Nevada's
+  contractor advertising statute.</li>
+</ul>
+<h2>Two different bars: what is visible now, what will go live</h2>
+<p>A page being reachable in this build is not the same as a page being ready to publish,
+and the two are now governed separately.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th style="width:11rem">Bar</th><th>Rule</th><th>Effect today</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Linked in this build</strong></td>
+      <td>A page appears in the menus and the section listings if it has anything of its own at all</td>
+      <td>96 pages, so the structure can be walked and reviewed</td></tr>
+    <tr><td><strong>Allowed to go live</strong></td>
+      <td>A page needs at least two real sections: a dated search record, a business count with a usable official code, a licensing source, or a verified client result. The heading, the guarantee line and the call to action do not count toward it</td>
+      <td>Far fewer. Most industry and state pages carry one</td></tr>
+  </tbody>
+</table></div>
+<p>The gap between those two numbers is the research queue, and it closes as searches are
+captured and licensing sources gathered. Nothing is indexed today, so the distinction
+costs nothing now and decides everything at launch.</p>
+<p class="note">This changed this afternoon. Removing a section that was identical on 52
+pages, a single question whose answer came from the declared facts, made the thinness
+plain: a state page without a city now shows a heading, a business count and a call to
+action, which is exactly what it has always been worth. The section was hiding that
+rather than fixing it.</p>
+
+<h2>What happens to a page with nothing of its own</h2>
+<p>Plainly: it is built, it is kept out of the site, and it waits. It is not deleted, not
+filled with generic text, and not published in the hope that it does no harm.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>State</th><th>What that means</th><th>How many today</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Held back</strong></td>
+      <td>The page exists in the build but appears in no menu, no footer and no section
+      listing, and search engines are told not to index it. You would only reach it by
+      typing the address. It has nothing but a figure and a set of answers, so there is
+      no reason for anyone to land on it</td>
+      <td>8 industry pages</td></tr>
+    <tr><td><strong>Live in the site, thinner than it should be</strong></td>
+      <td>Reachable and linked, but carrying two or three sections where it should carry
+      five or six. Usually missing its search capture, its rules source, or both</td>
+      <td>Most of the 46 linked industry pages and 32 of the 50 state pages</td></tr>
+    <tr><td><strong>Complete</strong></td>
+      <td>Every section filled from its own source: capture, figures, rules, and proof
+      where a client fits</td>
+      <td>3 industries, 3 combinations, Las Vegas, 18 states in part</td></tr>
+    <tr><td><strong>Not yet built</strong></td>
+      <td>Planned, with its sources listed, waiting for the research</td>
+      <td>110 pages</td></tr>
+  </tbody>
+</table></div>
+
+<p><strong>What you see on a held-back page:</strong> the heading, the guarantee line, a
+business count, and two questions. It reads as unfinished because it is. That is the
+intended behaviour: the alternative is a page that looks complete and says nothing, which
+is the failure this whole approach exists to avoid.</p>
+
+<p><strong>What changes it:</strong> a search capture for that industry, which takes one
+sitting, and a licensing source for its state. Both are listed against the page in the
+research queue. A held-back page rejoins the site the moment they land, with no rebuild
+needed beyond its own.</p>
+
+<p><strong>Nothing is indexed yet regardless.</strong> Every page in this build is held
+back from search, so none of this is visible to anyone but us. The distinction above is
+what happens when pages start going live, one at a time, as each passes its checks.</p>
+
+<h2>How the target phrases are implemented</h2>
+<p>The site is built against one rule: "seo" and "guarantee" appear together, in any word order,
+with an industry, a city or a state attached. That rule is now written into the data rather than
+left to whoever writes a page, so it cannot drift.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Where</th><th>How the phrase is carried</th><th>State</th></tr></thead>
+  <tbody>
+    <tr><td>Page titles</td><td>"Guaranteed HVAC SEO | First Page SEO Guarantee" carries both word orders in one line: the reversed form in the opening, and the brand name, which contains the phrase, at the end</td><td><span class="tag t-ok">In place</span></td></tr>
+    <tr><td>Headings</td><td>Every money page's main heading is the phrase with its own modifier: "HVAC SEO Guarantee", "Texas SEO Guarantee", "HVAC SEO Guarantee in Las Vegas, NV"</td><td><span class="tag t-ok">In place, verified by an automated check</span></td></tr>
+    <tr><td>Body copy</td><td>The other word orders appear only where they read naturally, rather than being forced in</td><td><span class="tag t-ok">In place</span></td></tr>
+    <tr><td>One page per phrase</td><td>Each target phrase has exactly one page that owns it, so our own pages do not compete with each other</td><td><span class="tag t-ok">Assigned for all 771</span></td></tr>
+    <tr><td>Search volumes</td><td>No volume data yet, so the phrase list is reasoned rather than measured</td><td><span class="tag t-wait">Waiting on Semrush</span></td></tr>
+  </tbody>
+</table></div>
+
+<h3>The phrase map</h3>
+<p>771 target phrases are assigned across 186 pages: one primary per page, plus 319 secondary and
+266 supporting variants. 320 of the variants carry a form of "guarantee", which is the modifier
+almost nobody else in these results uses.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Phrase family</th><th>Example</th><th>Pages assigned</th><th>Pages built</th></tr></thead>
+  <tbody>
+    <tr><td>The phrase itself, and the brand</td><td>seo guarantee · guaranteed seo · first page seo guarantee</td><td>3</td><td>3</td></tr>
+    <tr><td>Phrase plus industry</td><td>hvac seo guarantee</td><td>54</td><td>54 built, 46 in the menus</td></tr>
+    <tr><td>Phrase plus state</td><td>texas seo guarantee</td><td>50</td><td>50</td></tr>
+    <tr><td>Phrase plus city</td><td>las vegas seo guarantee</td><td>25</td><td>1 rebuilt, 24 carried over from the old site</td></tr>
+    <tr><td>Phrase plus industry plus city</td><td>hvac seo guarantee las vegas</td><td>54</td><td>3</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout">
+  <h3>The opening this strategy is built on</h3>
+  <p>A search for "guaranteed seo houston" returned a page that never uses the word guarantee. The
+  agencies that rank for city and industry searches do not mention one, and the ones that do are
+  thin. Nobody occupies both, which is the gap the whole phrase map is aimed at.</p>
+  <p>The brand name helps rather than hinders: because it contains the phrase, every page carries it
+  in the title honestly, without a keyword being inserted anywhere it does not belong.</p>
+</div>
+
+<h3>What is not yet true</h3>
+<ul class="plain">
+  <li><strong>Coverage is 110 of 186 pages.</strong> The phrase map is complete and most of it now
+  has a page, but the pages claiming it are thinner than they will be once the research lands.</li>
+  <li><strong>No volumes.</strong> Which phrases are worth owning is currently reasoned from the
+  structure of the market rather than measured. Semrush settles it, and may reorder the build queue.</li>
+  <li><strong>Nothing is competing yet.</strong> Every page is held back from search until it passes
+  its checks, so none of this is being tested in the results.</li>
+  <li><strong>The blog cluster is 2 of 61.</strong> Those articles are what catch the people
+  searching whether guarantees are legitimate at all, which is a large part of the traffic for the
+  phrase.</li>
+</ul>
+
+<h2>Tomorrow's priority: the 32 states with nothing to say</h2>
+<p>The service is sold nationwide, so all 50 states need a page worth reading. 18 have one today,
+and only because each has a city beneath it. The other 32 carry business figures and nothing else,
+which made them the thinnest pages in the test. A nationwide claim with 32 empty state pages
+undercuts itself.</p>
+
+<p>The answer is not 32 separate research projects. One source does most of the work.</p>
+
+<div class="callout">
+  <h3>One board per state, nine industries unlocked</h3>
+  <p>Each state's contractor licensing board covers nine of our trades at once: heating and air
+  conditioning, plumbing, roofing, electrical, general contracting, painting, fencing, concrete and
+  solar. The rules differ genuinely between states, some license, some only register, some leave it
+  to counties, and the advertising rules differ with them. That difference is the content, and it
+  cannot be templated.</p>
+  <p>It is the highest-yield research in the project: one board fills a section on that state's page
+  and on nine industry pages at the same time.</p>
+</div>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Source</th><th>What it gives every state</th><th>Cost</th></tr></thead>
+  <tbody>
+    <tr><td>The state licensing board</td><td>What that state requires on a business website, and what happens when it is missing</td><td>One session per state</td></tr>
+    <tr><td>Census metro definitions</td><td>The real cities in each state, their populations, and competition per metro rather than per state</td><td>One file, parsed once for all 50</td></tr>
+    <tr><td>Business counts, already held</td><td>Which trades are crowded in that state and which are not</td><td>Done</td></tr>
+  </tbody>
+</table></div>
+
+<p>Each state page then leads with its licensing rules, follows with either its spread of cities,
+its single dominant city, or its low competitor density, whichever is true of it, and closes with
+the trades ranked for that state. Three sourced sections, which is enough for a page to stand on
+its own without a bespoke idea invented per state.</p>
+
+<div class="table-wrap"><table>
+  <thead><tr><th>Batch</th><th>Work</th><th>Result</th></tr></thead>
+  <tbody>
+    <tr><td>First</td><td>Parse the metro file once, for all 50 states</td><td>Every state gets real cities and populations, and its angle is chosen from data rather than assumed</td></tr>
+    <tr><td>Then, ten states at a time</td><td>One licensing board per state, then write and measure the batch</td><td>Ten state pages, plus the rules section on nine industry pages in each of those states</td></tr>
+    <tr><td>Throughout</td><td>Rank the trades per state from figures we already hold</td><td>No new research needed</td></tr>
+    <tr><td>Later</td><td>The health boards, per state</td><td>Unlocks the same section on the nine health industries</td></tr>
+  </tbody>
+</table></div>
+<p class="note">Five batches covers the country, and it closes the largest gap on the industry pages at the same time. The full state-by-state table, with each
+state's candidate cities and its assigned angle, is in the working document under State content
+plan.</p>
+
+<h2>What this costs, plainly</h2>
+<p>Generating pages is close to free: 104 were produced in an afternoon. Evidence is not. Every
+page that survives did so because someone captured searches and sourced rules for it, and that is
+the whole difference between the 22 that stand and the 82 that were refused.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>To get</th><th>Needs</th><th>Roughly</th></tr></thead>
+  <tbody>
+    <tr><td>A publishable industry page</td><td>2 search captures, 1 rules source if regulated, figures we hold</td><td>One research session per industry</td></tr>
+    <tr><td>A publishable state page</td><td>1 to 4 official rules sources, figures we hold</td><td>One research session per state</td></tr>
+    <tr><td>A publishable city page</td><td>3 search captures, metro figures we hold, a rewrite</td><td>One research session per city</td></tr>
+    <tr><td>The full 257</td><td>All of the above, plus verified client results</td><td>Paced by how many people do the capture work</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout">
+  <h3>The decision in front of us</h3>
+  <p>Not whether the approach works. It does, and the gates prove it page by page. The decision is
+  how much evidence-gathering to fund, and in what order, because that is what sets the pace.</p>
+  <p>The cheapest useful outcome is a launch of roughly 25 pages: the core pages, Las Vegas, the
+  three industries that already have their evidence, and the guarantee articles. That targets the
+  phrases that matter most, the bare term and the home market, and everything else follows in waves
+  behind it.</p>
+</div>
+
+<h2>Where to look</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Document</th><th>What it holds</th></tr></thead>
+  <tbody>
+    <tr><td>Bulk Test Findings</td><td>The full technical result: every measurement, the before and after, the marking decisions</td></tr>
+    <tr><td><code>build/copy-review.html</code></td><td>Every written page, module by module, with the reason each missing module is missing</td></tr>
+    <tr><td>Working document</td><td>Strategy, competitor analysis, page briefs, research queue, critic round</td></tr>
+    <tr><td><code>build/holes-ledger.json</code></td><td>Every gap on the site and what fills it</td></tr>
+  </tbody>
+</table></div>
+</main>
+<footer>Prepared 18 September 2026. Figures read from the built site at commit 2a351bc, before the
+navigation pass. Nothing in this build is indexed.</footer>
+</body>
+</html>

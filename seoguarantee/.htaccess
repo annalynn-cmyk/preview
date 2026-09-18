@@ -1,0 +1,56 @@
+# Generated from seoguarantee-data/data/redirects.csv. Do not hand-edit; edit the CSV and rebuild.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RedirectMatch 301 ^/seo-services/arlington-seo/?$ /our-locations/arlington-seo/
+  RedirectMatch 301 ^/seo-services/atlanta-seo/?$ /our-locations/atlanta-seo/
+  RedirectMatch 301 ^/seo-services/austin-seo/?$ /our-locations/austin-seo/
+  RedirectMatch 301 ^/seo-services/baltimore-seo/?$ /our-locations/baltimore-seo/
+  RedirectMatch 301 ^/seo-services/chicago-seo/?$ /our-locations/chicago-seo/
+  RedirectMatch 301 ^/seo-services/cleveland-seo/?$ /our-locations/cleveland-seo/
+  RedirectMatch 301 ^/seo-services/dallas-seo/?$ /our-locations/dallas-seo/
+  RedirectMatch 301 ^/seo-services/denver-seo/?$ /our-locations/denver-seo/
+  RedirectMatch 301 ^/seo-services/houston-seo/?$ /our-locations/houston-seo/
+  RedirectMatch 301 ^/seo-services/jacksonville-seo/?$ /our-locations/jacksonville-seo/
+  RedirectMatch 301 ^/seo-services/kansas-city-seo/?$ /our-locations/kansas-city-seo/
+  RedirectMatch 301 ^/seo-services/las-vegas-seo/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/seo-services/los-angeles-seo/?$ /our-locations/los-angeles-seo/
+  RedirectMatch 301 ^/seo-services/louisville-seo/?$ /our-locations/louisville-seo/
+  RedirectMatch 301 ^/seo-services/manhattan-seo/?$ /our-locations/manhattan-seo/
+  RedirectMatch 301 ^/seo-services/miami-seo/?$ /our-locations/miami-seo/
+  RedirectMatch 301 ^/seo-services/minneapolis-seo/?$ /our-locations/minneapolis-seo/
+  RedirectMatch 301 ^/seo-services/myrtle-beach-seo/?$ /our-locations/myrtle-beach-seo/
+  RedirectMatch 301 ^/seo-services/new-orleans-seo/?$ /our-locations/new-orleans-seo/
+  RedirectMatch 301 ^/seo-services/orlando-seo/?$ /our-locations/orlando-seo/
+  RedirectMatch 301 ^/seo-services/philadelphia-seo/?$ /our-locations/philadelphia-seo/
+  RedirectMatch 301 ^/seo-services/portland-seo/?$ /our-locations/portland-seo/
+  RedirectMatch 301 ^/seo-services/san-antonio-seo/?$ /our-locations/san-antonio-seo/
+  RedirectMatch 301 ^/seo-services/san-diego-seo/?$ /our-locations/san-diego-seo/
+  RedirectMatch 301 ^/seo-services/seattle-seo/?$ /our-locations/seattle-seo/
+  RedirectMatch 301 ^/location/las-vegas/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/locations/las-vegas-seo/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/seo-service/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/las-vegas-seo-service-new/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/new-las-vegas-seo/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/las-vegas-seo-company/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/las-vegas-seo-expert/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/las-vegas-seo-firm/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/location/?$ /our-locations/las-vegas-seo/
+  RedirectMatch 301 ^/funeral-home-marketing/?$ /industries/funeral-homes/
+  RedirectMatch 301 ^/church-marketing/?$ /industries/churches/
+  RedirectMatch 301 ^/services/las-vegas-web-design/?$ /services/web-design/
+  RedirectMatch 301 ^/las-vegas-online-marketing/las-vegas-web-design/?$ /services/web-design/
+  RedirectMatch 301 ^/services/las-vegas-conversion-rate-optimization/?$ /services/conversion-rate-optimization/
+  RedirectMatch 301 ^/las-vegas-online-marketing/las-vegas-conversion-rate-optimization/?$ /services/conversion-rate-optimization/
+  RedirectMatch 301 ^/cro-page/?$ /services/conversion-rate-optimization/
+  RedirectMatch 301 ^/industries/law-firm/?$ /industries/
+  RedirectMatch 301 ^/seo-new/?$ /
+  RedirectMatch 301 ^/our-team/?$ /about-us/
+  RedirectMatch 301 ^/seo-blog/?$ /seo-resources/
+  # PENDING ownership confirmation — uncomment once the domain is confirmed:
+  # RewriteCond %{HTTP_HOST} ^firstpageseoguarantee\.com$ [NC]
+  # RewriteRule ^(.*)$ https://seoguarantee.com/$1 [R=301,L]
+  # Trailing slash is the canonical form; the bare form redirects to it.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>

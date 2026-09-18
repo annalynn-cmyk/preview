@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Preview builds</title>
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fbfaf8; --panel:#ffffff; --ink:#1a1a1a; --muted:#6b6b6b;
+    --line:#e5e2dd; --accent:#1c4f8f; --shadow:0 1px 2px rgba(0,0,0,.05), 0 8px 24px rgba(0,0,0,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14161a; --panel:#1b1e24; --ink:#eceef1; --muted:#9aa1ac;
+      --line:#2a2f37; --accent:#7fb0ef; --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: env(safe-area-inset-top,0px) 20px env(safe-area-inset-bottom,0px);
+  }
+  .wrap{max-width:760px; margin:0 auto; padding-block:56px 72px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:8px}
+  h1{font-size:26px; letter-spacing:-.02em; margin:0 0 8px}
+  .lede{color:var(--muted); margin:0; max-width:56ch}
+  ul{list-style:none; margin:32px 0 0; padding:0; display:grid; gap:14px}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); overflow:hidden}
+  .card-link{display:block; padding:20px 22px; text-decoration:none; color:inherit}
+  .card-link:hover h2, .card-link:focus-visible h2{color:var(--accent); text-decoration:underline}
+  .card-link:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+  h2{font-size:18px; margin:0 0 6px; letter-spacing:-.01em}
+  .note{color:var(--muted); margin:0 0 12px; font-size:14.5px}
+  .meta{display:flex; flex-wrap:wrap; gap:6px 16px; margin:0; font-size:13px; color:var(--muted)}
+  footer{margin-top:40px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:13.5px}
+  footer p{margin:0 0 8px; max-width:62ch}
+  code{background:var(--bg); border:1px solid var(--line); border-radius:5px; padding:1px 5px; font-size:12.5px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Preview builds</h1>
+      <p class="lede">Work in progress, published as links instead of zips. Everything here is a
+      review copy: unfinished in places, and none of it is live.</p>
+    </header>
+
+    <ul>
+      <li class="card">
+        <a class="card-link" href="/preview/seoguarantee/">
+          <h2>First Page SEO Guarantee — full site</h2>
+          <p class="note">Review build, 261 pages. Every page noindex; nothing is live.</p>
+          <p class="meta">
+            <span>400 files</span>
+            <span>published 2026-09-19</span>
+          </p>
+        </a>
+      </li>
+      <li class="card">
+        <a class="card-link" href="/preview/seoguarantee-status/">
+          <h2>First Page SEO Guarantee — status report</h2>
+          <p class="note">What is done, what is pending, what each pending item waits on, and what the rest costs.</p>
+          <p class="meta">
+            <span>1 file</span>
+            <span>published 2026-09-19</span>
+          </p>
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      <p>These pages carry <code>noindex</code>, but the repository is public — treat a link
+      as shareable with the team, not as private.</p>
+      <p>To add one: <code>node publish.mjs --from &lt;dir&gt; --slug &lt;name&gt; --title "..."</code>,
+      then commit and push. This page rebuilds itself from <code>published.json</code>.</p>
+    </footer>
+  </div>
+</body>
+</html>

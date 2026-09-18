@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "slug": "seoguarantee",
+      "title": "First Page SEO Guarantee — full site",
+      "note": "Review build, 261 pages. Every page noindex; nothing is live.",
+      "published": "2026-09-19",
+      "files": 400,
+      "refs": 37321,
+      "url": "/preview/seoguarantee/"
+    },
+    {
+      "slug": "seoguarantee-status",
+      "title": "First Page SEO Guarantee — status report",
+      "note": "What is done, what is pending, what each pending item waits on, and what the rest costs.",
+      "published": "2026-09-19",
+      "files": 1,
+      "refs": 0,
+      "url": "/preview/seoguarantee-status/"
+    }
+  ]
+}

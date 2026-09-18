@@ -1,0 +1,50 @@
+# Generated from seoguarantee-data/data/redirects.csv. Do not hand-edit; edit the CSV and rebuild.
+/seo-services/arlington-seo/  /our-locations/arlington-seo/  301
+/seo-services/atlanta-seo/  /our-locations/atlanta-seo/  301
+/seo-services/austin-seo/  /our-locations/austin-seo/  301
+/seo-services/baltimore-seo/  /our-locations/baltimore-seo/  301
+/seo-services/chicago-seo/  /our-locations/chicago-seo/  301
+/seo-services/cleveland-seo/  /our-locations/cleveland-seo/  301
+/seo-services/dallas-seo/  /our-locations/dallas-seo/  301
+/seo-services/denver-seo/  /our-locations/denver-seo/  301
+/seo-services/houston-seo/  /our-locations/houston-seo/  301
+/seo-services/jacksonville-seo/  /our-locations/jacksonville-seo/  301
+/seo-services/kansas-city-seo/  /our-locations/kansas-city-seo/  301
+/seo-services/las-vegas-seo/  /our-locations/las-vegas-seo/  301
+/seo-services/los-angeles-seo/  /our-locations/los-angeles-seo/  301
+/seo-services/louisville-seo/  /our-locations/louisville-seo/  301
+/seo-services/manhattan-seo/  /our-locations/manhattan-seo/  301
+/seo-services/miami-seo/  /our-locations/miami-seo/  301
+/seo-services/minneapolis-seo/  /our-locations/minneapolis-seo/  301
+/seo-services/myrtle-beach-seo/  /our-locations/myrtle-beach-seo/  301
+/seo-services/new-orleans-seo/  /our-locations/new-orleans-seo/  301
+/seo-services/orlando-seo/  /our-locations/orlando-seo/  301
+/seo-services/philadelphia-seo/  /our-locations/philadelphia-seo/  301
+/seo-services/portland-seo/  /our-locations/portland-seo/  301
+/seo-services/san-antonio-seo/  /our-locations/san-antonio-seo/  301
+/seo-services/san-diego-seo/  /our-locations/san-diego-seo/  301
+/seo-services/seattle-seo/  /our-locations/seattle-seo/  301
+/location/las-vegas/  /our-locations/las-vegas-seo/  301
+/locations/las-vegas-seo/  /our-locations/las-vegas-seo/  301
+/seo-service/  /our-locations/las-vegas-seo/  301
+/las-vegas-seo-service-new/  /our-locations/las-vegas-seo/  301
+/new-las-vegas-seo/  /our-locations/las-vegas-seo/  301
+/las-vegas-seo-company/  /our-locations/las-vegas-seo/  301
+/las-vegas-seo-expert/  /our-locations/las-vegas-seo/  301
+/las-vegas-seo-firm/  /our-locations/las-vegas-seo/  301
+/location/  /our-locations/las-vegas-seo/  301
+/funeral-home-marketing/  /industries/funeral-homes/  301
+/church-marketing/  /industries/churches/  301
+/services/las-vegas-web-design/  /services/web-design/  301
+/las-vegas-online-marketing/las-vegas-web-design/  /services/web-design/  301
+/services/las-vegas-conversion-rate-optimization/  /services/conversion-rate-optimization/  301
+/las-vegas-online-marketing/las-vegas-conversion-rate-optimization/  /services/conversion-rate-optimization/  301
+/cro-page/  /services/conversion-rate-optimization/  301
+/industries/law-firm/  /industries/  301
+/seo-new/  /  301
+/our-team/  /about-us/  301
+/seo-blog/  /seo-resources/  301
+# PENDING ownership confirmation (facts.seed.json brand.secondary_domain) — uncomment once the domain is confirmed:
+# firstpageseoguarantee.com/*  https://seoguarantee.com/$1  301
+# Trailing slash is the canonical form. The bare form redirects to it.
+/*  /:splat/  301!
