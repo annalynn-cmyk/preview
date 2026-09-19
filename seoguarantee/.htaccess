@@ -37,15 +37,20 @@
   RedirectMatch 301 ^/location/?$ /our-locations/las-vegas-seo/
   RedirectMatch 301 ^/funeral-home-marketing/?$ /industries/funeral-homes/
   RedirectMatch 301 ^/church-marketing/?$ /industries/churches/
-  RedirectMatch 301 ^/services/las-vegas-web-design/?$ /services/web-design/
-  RedirectMatch 301 ^/las-vegas-online-marketing/las-vegas-web-design/?$ /services/web-design/
+  RedirectMatch 301 ^/services/las-vegas-web-design/?$ /services/web-development/
+  RedirectMatch 301 ^/las-vegas-online-marketing/las-vegas-web-design/?$ /services/web-development/
   RedirectMatch 301 ^/services/las-vegas-conversion-rate-optimization/?$ /services/conversion-rate-optimization/
   RedirectMatch 301 ^/las-vegas-online-marketing/las-vegas-conversion-rate-optimization/?$ /services/conversion-rate-optimization/
   RedirectMatch 301 ^/cro-page/?$ /services/conversion-rate-optimization/
   RedirectMatch 301 ^/industries/law-firm/?$ /industries/
   RedirectMatch 301 ^/seo-new/?$ /
-  RedirectMatch 301 ^/our-team/?$ /about-us/
+  RedirectMatch 301 ^/services/suite/?$ /services/
+  RedirectMatch 301 ^/services/search-engine-optimization/?$ /services/seo-suite/
+  RedirectMatch 301 ^/services/web-design/?$ /services/web-development/
   RedirectMatch 301 ^/seo-blog/?$ /seo-resources/
+  RedirectMatch 301 ^/seo-blog/can-an-seo-company-guarantee-first-page-rankings/?$ /seo-resources/can-an-seo-company-guarantee-first-page-rankings/
+  RedirectMatch 301 ^/seo-blog/seo-guarantee-checklist-red-flags/?$ /seo-resources/seo-guarantee-checklist-red-flags/
+  RedirectMatch 301 ^/our-team/?$ /about-us/
   # PENDING ownership confirmation — uncomment once the domain is confirmed:
   # RewriteCond %{HTTP_HOST} ^firstpageseoguarantee\.com$ [NC]
   # RewriteRule ^(.*)$ https://seoguarantee.com/$1 [R=301,L]

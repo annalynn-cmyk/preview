@@ -35,15 +35,20 @@
 /location/  /our-locations/las-vegas-seo/  301
 /funeral-home-marketing/  /industries/funeral-homes/  301
 /church-marketing/  /industries/churches/  301
-/services/las-vegas-web-design/  /services/web-design/  301
-/las-vegas-online-marketing/las-vegas-web-design/  /services/web-design/  301
+/services/las-vegas-web-design/  /services/web-development/  301
+/las-vegas-online-marketing/las-vegas-web-design/  /services/web-development/  301
 /services/las-vegas-conversion-rate-optimization/  /services/conversion-rate-optimization/  301
 /las-vegas-online-marketing/las-vegas-conversion-rate-optimization/  /services/conversion-rate-optimization/  301
 /cro-page/  /services/conversion-rate-optimization/  301
 /industries/law-firm/  /industries/  301
 /seo-new/  /  301
-/our-team/  /about-us/  301
+/services/suite/  /services/  301
+/services/search-engine-optimization/  /services/seo-suite/  301
+/services/web-design/  /services/web-development/  301
 /seo-blog/  /seo-resources/  301
+/seo-blog/can-an-seo-company-guarantee-first-page-rankings/  /seo-resources/can-an-seo-company-guarantee-first-page-rankings/  301
+/seo-blog/seo-guarantee-checklist-red-flags/  /seo-resources/seo-guarantee-checklist-red-flags/  301
+/our-team/  /about-us/  301
 # PENDING ownership confirmation (facts.seed.json brand.secondary_domain) — uncomment once the domain is confirmed:
 # firstpageseoguarantee.com/*  https://seoguarantee.com/$1  301
 # Trailing slash is the canonical form. The bare form redirects to it.
